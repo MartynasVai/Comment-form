@@ -1,11 +1,6 @@
 <?php 
 include ('src/autoLoader.php');
 
-/*
-$a= new TestA();
-echo $a->sayAaa() . "<br>";
-$a->getComments1();*/
-
 
 
 ?>
@@ -29,9 +24,9 @@ $a->getComments1();*/
   <input type="button" onclick="submitComment()" id="#submitButton" value="Publish" name="comment">
 </form> 
 <form class>
-<div class="col-md-1"><label for='name0' >Name:</label></div>
+<div class="col-md-1"><label for='name0' >Name*</label></div>
 <div class="col-md-5"><input type='text' class="textinput" name='name0' id='name0' value=''></div>
-<div class="col-md-1"><label for='email0'>Email:</label></div>
+<div class="col-md-1"><label for='email0'>Email*</label></div>
 <div class="col-md-5"><input type='text' class="textinput" name='email0' id='email0' value=''></div><br><br>
 <div class="col-md-1"><label for='text0'>Comment*</label></div>
 <div class="col-md-11"><textarea name = 'text0' id='text0' value=''></textarea><br></div>
@@ -46,9 +41,6 @@ $a->getComments1();*/
 </div>
 <script src="src/comments.js">
 <?php 
-//$a= new CommentsView();
-//echo $a->sayAaa() . "<br>";
-//$a->showComments();
 ?>
 
 
