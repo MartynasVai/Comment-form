@@ -85,11 +85,11 @@ function (data) {
             "<div>" + data[i][3] + "</div>"+
             "</div></div>"+
             "<div  class='formreply' id='formreply"+ commentId +"'><form>"+
-            "<div class='col-md-1'><label for='name"+ commentId +"'>Name:</label></div>"+
+            "<div class='col-md-1'><label for='name"+ commentId +"'>Name*</label></div>"+
             "<div class='col-md-5'><input type='text' class='textinput' name='name"+ commentId +"' id='name" + commentId + "' value=''></div>"+
-            "<div class='col-md-1'><label for='email"+ commentId +"'>Email:</label></div>"+
+            "<div class='col-md-1'><label for='email"+ commentId +"'>Email*</label></div>"+
             "<div class='col-md-5'><input type='text' class='textinput' name='email"+ commentId +"' id='email" + commentId + "' value=''></div><br><br>"+
-            "<div class='col-md-1'><label for='text"+ commentId +"'>Last name:</label></div>"+
+            "<div class='col-md-1'><label for='text"+ commentId +"'>Comment*</label></div>"+
             "<div class='col-md-11'><textarea name = 'text"+ commentId +"' id='text" + commentId + "' value=''></textarea><br></div>"+
             "<input type='hidden' value='" + commentId + "'>"+
             "<div class='col-md-1'></div><div class='col-md-1'><input type='button' class='btn btn-light' onclick='submitReply(" + commentId + ")' id='#submitButton' value='Publish'></div>"+
