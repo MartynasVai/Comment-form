@@ -42,9 +42,9 @@ class CommentsController extends Comments{
          $result .= 'Invalid name ';
        }
       if(strpos($this->email, "@") == false && strpos($this->email, ".") == false ){
-         $result .= 'Please enter a valid email';
+         $result .= 'Please enter a valid email ';
      }
-      if (str_contains($this->text,"<")) {
+     if (preg_match('/[\'^£$%&*()}{@#~><>,|_¬]/', $this->text)) {
       $result .= 'Invalid comment ';
      }
       
