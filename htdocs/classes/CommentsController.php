@@ -44,6 +44,9 @@ class CommentsController extends Comments{
       if(strpos($this->email, "@") == false && strpos($this->email, ".") == false ){
          $result .= 'Please enter a valid email';
      }
+      if (str_contains($this->text,"<")) {
+      $result .= 'Invalid comment ';
+     }
       
       return $result;
 
